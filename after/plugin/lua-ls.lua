@@ -1,6 +1,6 @@
-local lspConfig = require 'lspconfig'
+local config = require 'lspconfig'
 
-lspConfig.lua_ls.setup {
+config.lua_ls.setup {
     settings = {
 	Lua = {
 	    diagnostics = {
