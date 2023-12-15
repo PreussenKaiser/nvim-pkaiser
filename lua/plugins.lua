@@ -18,6 +18,15 @@ return require('packer').startup(function(use)
 	    { 'hrsh7th/nvim-cmp' },
 	    { 'hrsh7th/cmp-nvim-lsp' },
 	    { 'L3MON4D3/LuaSnip' },
-	}
+	},
+	config = function(config)
+	    config.extend_lspconfig()
+
+	    config.on_attach(function(client, bufnr)
+		config.default_keymaps({ buffer = bufnr })
+	    end)
+
+	    config.setup_servers({ 'lua-ls', 'ccls' })
+	end
     }
 end)
