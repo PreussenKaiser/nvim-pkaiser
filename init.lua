@@ -1,2 +1,3 @@
-require('settings')
-require('plugins')
+require 'commands'
+require 'plugins'
+require 'settings'

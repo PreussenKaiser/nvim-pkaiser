@@ -19,6 +19,8 @@ return require('packer').startup(function(use)
 	    { 'hrsh7th/cmp-buffer' },
 	    { 'hrsh7th/cmp-nvim-lsp', },
 	    { 'L3MON4D3/LuaSnip' },
+	    { 'nvim-tree/nvim-tree.lua' },
+	    { 'nvim-tree/nvim-web-devicons' },
 	},
     }
 end)
