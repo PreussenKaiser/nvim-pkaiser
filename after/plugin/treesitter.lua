@@ -1,7 +1,7 @@
 local config = require 'nvim-treesitter.configs'
 
 config.setup {
-    ensure_installed = { "c", "cpp", "lua", "vim", "vimdoc", "query" },
+    ensure_installed = { "c", "cpp", "rust", "lua", "vim", "vimdoc", "query" },
     sync_install = false,
     auto_install = true,
 
