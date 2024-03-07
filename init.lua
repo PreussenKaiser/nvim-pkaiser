@@ -1,3 +1,3 @@
-require 'commands'
 require 'plugins'
+require 'commands'
 require 'settings'
