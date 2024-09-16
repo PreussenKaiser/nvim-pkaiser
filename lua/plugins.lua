@@ -1,6 +1,8 @@
 vim.cmd [[packadd packer.nvim]]
 
-return require('packer').startup(function(use)
+local packer = require 'packer'
+
+return packer.startup(function(use)
     use 'wbthomason/packer.nvim'
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use {
@@ -21,6 +23,13 @@ return require('packer').startup(function(use)
 	    { 'L3MON4D3/LuaSnip' },
 	    { 'nvim-tree/nvim-tree.lua' },
 	    { 'nvim-tree/nvim-web-devicons' },
+	},
+    }
+    use {
+	'nvim-telescope/telescope.nvim',
+	branch = '0.1.x',
+	requires = {
+	    { 'nvim-lua/plenary.nvim' },
 	},
     }
 end)
