@@ -4,7 +4,10 @@ local packer = require 'packer'
 
 return packer.startup(function(use)
     use 'wbthomason/packer.nvim'
-    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+    use {
+	'nvim-treesitter/nvim-treesitter',
+	{ run = ':TSUpdate' }
+    }
     use {
 	'rose-pine/neovim',
 	as = 'rose-pine',
