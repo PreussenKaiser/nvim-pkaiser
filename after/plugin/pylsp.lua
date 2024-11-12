@@ -1,3 +1,3 @@
 local config = require 'lspconfig'
 
-config.pylsp.setup({ })
+config.pylsp.setup { }
